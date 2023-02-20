@@ -1,13 +1,13 @@
 export default {
   // page1部分
   page1: {
-    titleEn: 'Hello,I`m WeiTingting', //英文标题
+    titleEn: 'Hello,I`m XuWeilong', //英文标题
     title: '一个追梦在前端路上的小白', //中文标题
   },
   // page2部分
   page2: {
     authorImg: 'page1.jpg', // 作者头像
-    xinhui: '我叫卫婷婷，是一名在读的大三学生。', // 幸会
+    xinhui: '我叫徐伟龙，是一名在读的大四学生。', // 幸会
     qiuzhi: '前端开发', // 求职意向
     guanyuwo: '掌握了前端js、html、css基本技术和Vue框架、UI框架，nodejs等等，有着公司项目实战的经验和一些java安卓开发经历。希望可以和大家一起学习，共同进步！' // 关于我
   },
