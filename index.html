@@ -1,146 +1,259 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!-- <meta http-equiv="Access-Control-Allow-Origin" content="*"> -->
-  <link rel="shortcut icon" href="./src/img/favicon.ico">
-  <title>Web前端个人简历</title>
 
-  <!-- ---------------CSS引用--------------------- -->
-  <link rel="stylesheet" href="lib/bootstrap.min.css"><!-- bootsarap -->
-  <link rel="stylesheet" href="lib/lizi/style.css"><!-- 粒子样式 -->
-  <link rel="stylesheet" href="src/css/base.min.css"><!--    自己的CSS压缩版-->
+    <title>徐伟龙的简历</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/base.css" type="text/css">
+    <link rel="stylesheet" href="css/cv.css">
+    <!--[if lte IE 9]>
+    <script type="text/javascript">
+        // window.location = "./error.html"
+    </script>
+    <![endif]-->
 </head>
 
 <body>
 
-  <!-- ---------------JS--------------------- -->
-  <script src="lib/less.min.js"></script> <!--  less-->
-  <script src="lib/jquery.min.js"></script><!-- jq,bootsrap-->
-  <script src="lib/bootstrap.min.js"></script>
 
-  <script src="lib/handlebars.min.js"></script><!-- 模板引擎js -->
-  <script src="lib/lizi/particless.min.js"></script><!-- 粒子js -->
-  <!-- <link rel="import" href="html/main.html" id="boxs" /> -->
+<div class="content ">
+    <div class="cv-container">
+        <div id="section1" class="section active">
+            <div id="top" title="顶部">
+                <img src="image/top.png" alt="回到顶部">
+            </div>
+            <div class="myIntro">
+                <h1 class="fade">Hello, I'm 徐伟龙</h1>
+                <h3 class="fade">一名应届生</h3>
+                <span class="active fade" id="abMe">关于我</span>
+                <span id="mypro" class="fade">我的作品</span>
+            </div>
+            <ul class="bg-img">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
 
-  <!--主要内容html -->
-  <div id="box"></div>
+        <div id="section2" class="section">
+            <!-- 导航条-->
+            <div id="nav-bar" class="bar">
+                <div class="container">
+                    <a  target="_blank">
+                        <div class="fl">白夜ｘｗｌ</div>
+                    </a>
+                    <ul class="fr nav-ul">
+                        <li>关于我</li>
+                        <li>求职意向</li>
+                        <li>项目经历</li>
+                        
+                        <li>联系我</li>
+                        
+                    </ul>
+                    <div class="fr more-nav">
+                        <img src="image/more.png" alt="更多">
+                    </div>
+                </div>
+                <ul class="nav-ul nav-xs-ul">
+                    <li>关于我</li>
+                    <li>求职意向</li>
+                    <li>项目经历</li>
+                    
+                    <li>联系我</li>
+                    
+                </ul>
+            </div>
 
+            <!--关于我-->
+            <h2>关于我</h2>
+            <hr>
+            <div class="center fades">
+                <p class="center"><img src="image/mypic.jpg" alt="头像"/></p>
+                <div class="my-intro">
+                    <p>我叫徐伟龙，北京印刷学院机电工程系物流工程专业。将于今年（2023年）六月毕业。大学学习经历有CET-6，CAD制图，C语言，机械工程，
+                        控制工程，供应链管理，传感器与检测，数据库应用，物联网，智能机器人技术。
+                    </p>
+                    <p>本人学习能力不错，因此在大学期间也学的很广，希望在贵公司学习深耕一个领域                        
+                    </p>
+                    <p class="ptitle">科研情况</p>
+                 
+                    <a   href="image/jm.jpg">
+                    北京市数学建模竞赛二等奖
+                    </a>
+                    <br><br>
+                    <a  href="https://kns.cnki.net/kcms2/article/abstract?v=kxaUMs6x7-4I2jr5WTdXti3zQ9F92xu0djlSA8-Y0a-w2p-ld1Ocsxb5ag4em_9QNiNOjLga9ju-Zzdnm8PVz9lI0S9ScOVU&uniplatform=NZKPT">
+                    发明专利（实审阶段）
+                        </a>
+                </div>
 
-  <script type="module" crossorigin="use-credentials">
-    import configData from './src/config.js'; //加载配置文件
-    var arrMastering = configData.page4.proresslist;//部分模块数据的动态渲染
+            </div>
+        </div>
+        <div id="section3" class="section">
+            <h2>求职意向</h2>
+            <hr>
+            <div class="container center fades">
+                <div class="col-md-3 col-xs-6 skill-ps skill">
+                    <p><img src="image/web.png" alt="Java软件工程师"></p>
+                    <p class="ptitle">物流管理</p>
+                    <p>本科专业对口职业，学习过运筹学供应链管理等课程</p>
+                </div>
+                <div class="col-md-3 col-xs-6 skill-web skill">
+                    <p><img src="image/css.png" alt="css"></p>
+                    <p class="ptitle">前端开发</p>
+                    <p>独立开发过微信小程序，了解前端知识框架</p>
+                </div>
+                <div class="col-md-3 col-xs-6 skill-js skill">
+                    <p><img src="image/js.png" alt="js"></p>
+                    <p class="ptitle">嵌入式系统</p>
+<p>学习过51 STM32，喜欢玩arduino等</p>
+                 <!--          <p>会Ps Pr，热爱摄影，曾经运营过公众号</p>         --->  
+                </div>
+                <div class="col-md-3 col-xs-6 skill-h5 skill">
+                    <p><img src="image/h5.png" alt="h5"></p>
+                    <p class="ptitle">摄影传媒</p>
+                    <p>会Ps Pr，热爱摄影，曾经运营过公众号</p>
+                    
+                </div>
+            </div>
+        </div>
+        <div id="section4" class="section">
+            <h2>项目经历</h2>
+            <hr>
+            <div class="container center fades">
+                <p class="center intros">一直在努力,从未放弃</p>
+                <div class="col-md-4 col-xs-6">
+                    <div class="imgbox">
+                        <img src="image/wechat.jpg" >
+                    </div>
+                    <a href="image/xcx.jpg" target="_blank">
+                        <div class="zp-cover">
+                            <h4>基于微信小程序的二手书网上交易平台</h4>
+                            <p>学习了小程序的组件、API、事件、数据绑定等基础知识，以及数据库设计和管理、交易流程设计。该项目学习了HTML5/CSS3、网页排版、生命周期、页面路由、API请求等前端知识。</p>
+                            <img src="image/search.png" alt="查看">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-xs-6">
+                    <div class="imgbox">
+                        <img src="image/nml.png" >
+                    </div>
+                    <a href="https://www.bilibili.com/video/BV12V411E7pQ" target="_blank">
+                        <div class="zp-cover" style="top: 45%">
+                            <h4>基于Arduino 的含麦轮多传感器避障小车</h4>
+                            <p>使用Arduino开发板、麦克纳姆轮、超声波传感器、红外线传感器和一些其他电子元件以及Arduino的编程语言和开发环境。学习了四轮驱动麦克纳姆轮方法。</p>
+                            <img src="image/nml.png" alt="查看">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-xs-6 ">
+                    <div class="imgbox">
+                        <img src="image/3d.png" alt="fastjson-spring-boot-starter">
+                    </div>
+                    <a href="https://www.bilibili.com/video/BV1na4y1s7vG" target="_blank">
+                        <div class="zp-cover">
+                            <h4>3Dmax次世代流程（盾牌和防御塔）</h4>
+                            <p>学习了用3Dmax制作底模和高模，展分UV，法线烘焙，Substance Paint绘制材质贴图。</p>
+                            <img src="image/search.png" alt="查看">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-xs-6 ">
+                    <div class="imgbox">
+                        <img src="image/tms.jpg" alt="fastjson-spring-boot-starter">
+                    </div>
+                    <a href="image/tms.jpg" target="_blank">
+                        <div class="zp-cover">
+                            <h4>基于51单片机的3D打印托马斯火车</h4>
+                            <p>结合了51单片机和3D打印技术，完成了设计和打印3D模型、硬件电路设计、 C语言编写程序、组装和调试外围电路。该项目学习了一定的电子、机械和程序设计技能。</p>
+                            <img src="image/search.png" alt="查看">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-xs-6 ">
+                    <div class="imgbox">
+                        <img src="image/jd.png" alt="fastjson-spring-boot-starter">
+                    </div>
+                    <a href="image/jd.png" target="_blank">
+                        <div class="zp-cover">
+                            <h4>京东顾客差评反馈爬虫（以海信电视为目标）</h4>
+                            <p>了解了python爬虫框架步骤。如发送 HTTP 请求、获取响应处理请求头、解析 HTML 页面、将爬取的数据存储到本地。</p>
+                            <img src="image/search.png" alt="查看">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-xs-6 ">
+                    <div class="imgbox">
+                        <img src="image/matlab.png" alt="anires">
+                    </div>
+                    <a href="image/matlab.png" target="_blank">
+                        <div class="zp-cover">
+                            <h4>matlab灰色预测算法研究和运用（快递包裹量变化预测）</h4>
+                            <p>将收集到的快递包裹量数据进行初步处理，使用gm11函数建立灰色预测模型，调整其参数，如初始值、灰作用函数等，来优化预测效果，最后进行预测结果分析。学习了灰色预测算法的基本原理和应用范围，MATLAB中的gm11函数建立与优化方法。</p>
+                            <img src="image/search.png" alt="查看">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-xs-6 ">
+                    <div class="imgbox">
+                        <img src="image/bx.png" >
+                    </div>
+                    <a href="image/bx.png" target="_blank">
+                        <div class="zp-cover">
+                            <h4>参与编写书籍：工业4.0生产现场监测方向</h4>
+                        
+                            <img src="image/search.png" alt="查看">
+                        </div>
+                    </a>
+                </div>
 
-    $('#box').load('html/main.html', function () {
-      //1、渲染模板
-      var html = $('#box').html();//获取内容模板
-      var template = Handlebars.compile(html); //编译
-      var htmls = template(configData);//渲染模板
-      $('#box').html(htmls);//写入模板
+                <div class="col-md-4 col-xs-6 ">
+                    <div class="imgbox">
+                        <img src="image/any.png" >
+                    </div>
+                    <a href="image/any.png" target="_blank">
+                        <div class="zp-cover">
+                            <h4>Anylogic物流分拣仿真模型</h4>
+                            <img src="image/search.png" alt="查看">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="section5" class="section">
+            <h2>联系我</h2>
+            <hr>
+            <div class="center fades fadesin">
+                <div class="my-intro">
+                    <p>联系QQ：<a target="_blank" href="https://user.qzone.qq.com/2802196784">2802196784</a>&nbsp;&nbsp;|&nbsp;&nbsp;我的电话/微信：19965384821
+                    </p>
+                    <p>不浮躁，不守旧，爱编程，爱摄影，爱运动，爱旅行，执行力和学习能力优异
+                    </p>
+                                       
+                    <p class="links">哔哩哔哩：<a href="https://space.bilibili.com/436079065" target="_blank">https://space.bilibili.com/436079065</a>
+                    </p>
+                    <p class="links">GitHub：<a href="https://github.com/xwl-219" target="_blank">https://github.com/xwl-219</a>
+                    </p>
+                   
+                       
 
+                </div>
+            </div>
+        </div>
+        </div>
+        <div id="section6" >
+         
+           
+        </div>
+        <div id="section7" >
+           
+    </div>
+    <p class="center beian">&copy; 2023 徐伟龙 |  <a href="https://user.qzone.qq.com/2802196784" target="_blank">QQ空间:白夜ｘｗｌ</a> 
+        </p>
 
-      //2、事件监听
-      particlesJS.load('particles', 'lib/lizi/particles.json', function () { //加载粒子
-        console.log('callback - particles.js config loaded');
-      });
-
-      arrMastering = configData.page4.proresslist;//部分模块数据的动态渲染
-
-      window.addEventListener('scroll', scrollEvent) //对window滚动的监听
-      bindEvenInit(); //锚点定位初始化
-    });
-
-
-    // 原生link import兼容性检测代码
-    function supportsImports() {
-      return 'import' in document.createElement('link');
-    }
-    //锚点定位初始化
-    function bindEvenInit() {
-      $('.navbtn').bind("click touch", function () {
-        //scrollTop 滚动到  $(this).attr('href')锚点关联id所在位置
-        $('html,body').animate({ scrollTop: ($($(this).attr('href')).offset().top) }, 500)
-        return false
-      })
-      $(function () {
-        $('[data-toggle="tooltip"]').tooltip()
-      });
-      $('.element').on('click', function () {
-        $(this).popover('toggle')
-      })
-
-      $('#slideBut').on("click touch", function () {
-        $('#slideList').slideToggle(1000);
-      })
-
-      $('.navbtn').click(function () {
-        $('#slideList').css('display', 'none')
-      })
-    }
-    //播放音乐初始化方法
-    function audioInit() {
-      var audio = $('#audio').children('audio')[0];
-      if (audio) {
-        var audioControls = $('#audio').children('.audio-controls')[0]
-        if (audio) {
-          audio.volume = 0.05;//默认音量
-          $('#audioClick').click(function () {
-            if (audio.paused) {
-              audio.play();
-              audioControls.style.animationPlayState = "running"
-              $('#audioClick').addClass('icon-play_fill').removeClass('icon-zantingtingzhi')
-            } else {
-              audio.pause();
-              audioControls.style.animationPlayState = "paused"
-              $('#audioClick').addClass('icon-zantingtingzhi').removeClass('icon-play_fill')
-            }
-          })
-        }
-      }
-    }
-    //删除元素方法
-    function removeElement(_element) {
-      var _parentElement = _element.parentNode;
-      if (_parentElement) {
-        _parentElement.removeChild(_element);
-      }
-    }
-    //滚动事件监听
-    function scrollEvent() {
-      var vues = this;
-      var a, b, c;
-      a = $(window).height();//页面高度
-      b = $(window).scrollTop();//获取滚动高度
-
-      $('.page').each(function () {
-        c = $(this).offset().top;
-        var tag = true;
-        if (a + b - 120 > c) {
-          if (!$(this).find('.container').hasClass('animateload')) {
-            $(this).find('.container').addClass('animateload')
-          }
-
-          if ($(this)[0].id == 'page4' || tag) {
-            tag = false
-            $(this).find('.proress').each(function (i, n) {
-              $(this).find('.bar-propress')[0].style.width = arrMastering[i].value;
-              $(this).find('.propress-title').text(arrMastering[i].title);
-              $(this).find('.bar-propress').children('span').text(arrMastering[i].value)
-            })
-          }
-        } else {
-          // if($(this).find('.container').hasClass('animateload')) {$(this).find('.container').removeClass('animateload')}
-        }
-      })
-    }
-
-  </script>
-
-
+</div>
+<script src="./js/jquery-1.11.1.min.js"></script>
+<script src="./js/mycv.js"></script>
 </body>
-
 </html>
